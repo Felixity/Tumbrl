@@ -1,0 +1,6 @@
+framework module Pods_Tumbrl {
+  umbrella header "Pods-Tumbrl-umbrella.h"
+
+  export *
+  module * { export * }
+}
