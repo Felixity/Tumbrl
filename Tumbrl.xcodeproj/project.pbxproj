@@ -10,6 +10,8 @@
 		609FBF62E84FC3D131234F6F /* Pods_Tumbrl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0035FE59B8D6376F5E87F90 /* Pods_Tumbrl.framework */; };
 		C6A8A5C91E8CBE1500B8C6BC /* PhotosDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8A5C81E8CBE1500B8C6BC /* PhotosDetailViewController.swift */; };
 		C6A8A5CB1E8CBE4F00B8C6BC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8A5CA1E8CBE4F00B8C6BC /* PhotoCell.swift */; };
+		C6A8A5CD1E8DBBF100B8C6BC /* InfiniteScrollActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8A5CC1E8DBBF100B8C6BC /* InfiniteScrollActivityView.swift */; };
+		C6A8A5CF1E8DF7B200B8C6BC /* FullScreenPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8A5CE1E8DF7B200B8C6BC /* FullScreenPhotoViewController.swift */; };
 		D3475F121E8CA2A400EC6E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3475F111E8CA2A400EC6E27 /* AppDelegate.swift */; };
 		D3475F171E8CA2A400EC6E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3475F151E8CA2A400EC6E27 /* Main.storyboard */; };
 		D3475F191E8CA2A400EC6E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3475F181E8CA2A400EC6E27 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		A7A1493DD0EF4DCB4B9831BC /* Pods-Tumbrl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumbrl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tumbrl/Pods-Tumbrl.release.xcconfig"; sourceTree = "<group>"; };
 		C6A8A5C81E8CBE1500B8C6BC /* PhotosDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosDetailViewController.swift; sourceTree = "<group>"; };
 		C6A8A5CA1E8CBE4F00B8C6BC /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		C6A8A5CC1E8DBBF100B8C6BC /* InfiniteScrollActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollActivityView.swift; sourceTree = "<group>"; };
+		C6A8A5CE1E8DF7B200B8C6BC /* FullScreenPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPhotoViewController.swift; sourceTree = "<group>"; };
 		D0035FE59B8D6376F5E87F90 /* Pods_Tumbrl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumbrl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3475F0E1E8CA2A400EC6E27 /* Tumbrl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumbrl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3475F111E8CA2A400EC6E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				D3475F231E8CA3FD00EC6E27 /* PhotosViewController.swift */,
+				C6A8A5CE1E8DF7B200B8C6BC /* FullScreenPhotoViewController.swift */,
+				C6A8A5CC1E8DBBF100B8C6BC /* InfiniteScrollActivityView.swift */,
 				C6A8A5C81E8CBE1500B8C6BC /* PhotosDetailViewController.swift */,
 				C6A8A5CA1E8CBE4F00B8C6BC /* PhotoCell.swift */,
 				D3475F111E8CA2A400EC6E27 /* AppDelegate.swift */,
@@ -218,9 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A8A5CD1E8DBBF100B8C6BC /* InfiniteScrollActivityView.swift in Sources */,
 				C6A8A5CB1E8CBE4F00B8C6BC /* PhotoCell.swift in Sources */,
 				D3475F121E8CA2A400EC6E27 /* AppDelegate.swift in Sources */,
 				D3475F241E8CA3FD00EC6E27 /* PhotosViewController.swift in Sources */,
+				C6A8A5CF1E8DF7B200B8C6BC /* FullScreenPhotoViewController.swift in Sources */,
 				C6A8A5C91E8CBE1500B8C6BC /* PhotosDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

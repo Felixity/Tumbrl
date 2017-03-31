@@ -1,27 +1,34 @@
 //
-//  PhotosDetailViewController.swift
+//  FullScreenPhotoViewController.swift
 //  Tumbrl
 //
-//  Created by Arthur Burgin on 3/29/17.
+//  Created by Arthur Burgin on 3/30/17.
 //  Copyright © 2017 Laura. All rights reserved.
 //
 
 import UIKit
 
-class PhotosDetailViewController: UIViewController {
-    
-    var image: UIImage?
-    var photoURL: String?
-    
-    @IBOutlet var userImage: UIImageView!
+class FullScreenPhotoViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet var zoomPhotoView: UIImageView!
+    var image:UIImage?
+    
+    @IBOutlet var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userImage.image = image
-        userImage.isUserInteractionEnabled = true
-        
+
         // Do any additional setup after loading the view.
+        scrollView.delegate = self
+        zoomPhotoView.image = image
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return zoomPhotoView
+    }
+
+    @IBAction func closeVC(_ sender: Any) {
+        dismiss(animated: true, completion: {})
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,21 +36,15 @@ class PhotosDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func tapPhoto(_ sender: UITapGestureRecognizer) {
-        performSegue(withIdentifier: "ZoomPhoto", sender: sender)
-    }
-    
-    
-    
+
+    /*
     // MARK: - Navigation
-    
+
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        let vc = segue.destination as! FullScreenPhotoViewController
-        vc.image = image
     }
-    
+    */
+
 }
